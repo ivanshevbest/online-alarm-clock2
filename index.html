@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн часы с будильником</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock"></div>
+    <div class="alarm">
+        <button onclick="toggleAlarm()">Установить будильник</button>
+    </div>
+    <div class="alarm-time" style="display: none;">
+        <input type="time" id="alarmTime" placeholder="Установите время будильника">
+        <button onclick="setAlarm()">Установить</button>
+    </div>
+    <div class="stop-alarm" style="display: none;">
+        <button onclick="stopAlarm()">Выключить</button>
+    </div>
+    <script src="script.js"></script>
+    <audio id="alarmSound" src="https://song.muzmaze.org/download/333133b7303037b3348c3731353332b63436310400/2ae5b0cfb84f7961abe9e3b548fefc29/Бодрый%20будильник%20-%20Waiting%20for%20Love.mp3"></audio>
+</body>
+</html>
